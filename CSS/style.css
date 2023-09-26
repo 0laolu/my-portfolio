@@ -322,19 +322,19 @@ img, picture {
 }
 
 .contact-btn {
-    background-color: grey;
+    background-color: transparent;
     font-size: 1.2rem;
     font-weight: 600;
     width: 12%;
     padding: 1rem 0;
-    border: 1px solid grey;
+    border: 1px solid darkred;
     border-radius: 30px;
     margin: 0 auto;
     cursor: pointer;
 }
 
 .contact-btn a {
-    color: white;
+    color: darkred;
     letter-spacing: 0.05rem;
 }
 
