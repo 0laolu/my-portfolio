@@ -1,12 +1,11 @@
 
 
-*, 
-*::before,
-*::after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'League Spartan', sans-serif;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -16,11 +15,6 @@ html {
 body {
     line-height: 1.5;
 }
-
-img, picture {
-    max-width: 100%;
-}
-
 
 .primary-header {
     background-color: rgba(245, 245, 245, 0.8);
@@ -63,6 +57,11 @@ img, picture {
 .nav-bar a {
     color: black;
     text-decoration: none;
+}
+
+.nav-bar a:hover {
+    color: darkred;
+    font-weight: 600;
 }
 
 .contact-btn a {
@@ -144,6 +143,32 @@ img, picture {
     cursor: pointer;
 }
 
+.button-container button:hover {
+    background-color: darkred;
+    color: white;
+}
+
+.socials {
+    margin: 3rem 0;
+    width: 30%;
+    max-width: 220px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.socials i {
+    color: darkred;
+    border: 1px solid darkred;
+    padding: 0.8rem 0.86rem;
+    border-radius: 100%;
+}
+
+.socials i:hover {
+    background-color: darkred;
+    color: white;
+}
+
 /* ANIMATION FOR THE HAND WAVE BEGINS */
 
 .hero-section__content .hand-wave {
@@ -195,7 +220,8 @@ img, picture {
 }
 
 .about-me__image img {
-    max-height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .about-me__summary h4 {
@@ -272,14 +298,14 @@ img, picture {
 
 .list-content__summary {
     font-size: 1.15rem;
-    letter-spacing: 0.03rem;
+    /* letter-spacing: 0.03rem; */
     word-spacing: 0.05rem;
     line-height: 1.5;
 }
 
 .projects .technologies {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
     align-items: center;
     font-size: 1.1rem;
@@ -291,13 +317,14 @@ img, picture {
 .projects .technologies li {
     color: darkred;
     box-shadow: none;
-    margin: 0.15rem;
+    margin: 0;
+    margin-right: 1rem;
 }
 
 .project-links {
-    /* margin: 1.5rem 0; */
     display: flex;
     align-items: center;
+    margin-top: 2.5rem;
 }
 
 
@@ -307,13 +334,16 @@ img, picture {
     height: auto;
 }
 
-.project-links img.github {
-    width: 30px;
+
+.project-links a .github {
+    color: darkred;
+    font-size: 1.7rem;
     margin-right: 1.5rem;
 }
 
-.project-links img.window {
-    width: 40px;
+.project-links a .window {
+    color: darkred;
+    font-size: 1.5rem;
 }
 
 .btn-container {
@@ -323,6 +353,7 @@ img, picture {
 
 .contact-btn {
     background-color: transparent;
+    color: darkred;
     font-size: 1.2rem;
     font-weight: 600;
     width: 12%;
@@ -331,11 +362,13 @@ img, picture {
     border-radius: 30px;
     margin: 0 auto;
     cursor: pointer;
+    letter-spacing: 0.05rem;
 }
 
-.contact-btn a {
-    color: darkred;
-    letter-spacing: 0.05rem;
+
+.contact-btn:hover {
+    background-color: darkred;
+    color: white;
 }
 
 footer {
@@ -404,6 +437,22 @@ footer p {
         width: 29px;
     }
 
+    .socials {
+        margin: 3rem 0;
+        width: 70%;
+        max-width: 250px;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    
+    .socials i {
+        color: darkred;
+        border: 1px solid darkred;
+        padding: 0.8rem 0.86rem;
+        border-radius: 100%;
+    }
+
     /* AboUT mE Section */
 
     .container {
@@ -468,6 +517,7 @@ footer p {
 
     .projects .technologies li {
         font-size: 1rem;
+        margin-right: 1rem;
     }
 
     /* Contact Us section */
