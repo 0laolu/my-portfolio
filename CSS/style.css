@@ -1,0 +1,504 @@
+
+
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    line-height: 1.5;
+}
+
+img, picture {
+    max-width: 100%;
+}
+
+
+.primary-header {
+    background-color: rgba(245, 245, 245, 0.8);
+    box-shadow: 0px 3px 6px rgba(194, 193, 193, 0.8);
+}
+
+.nav-bar {
+    color: darkred;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 2rem 0;
+    margin: 0 auto;
+    
+}
+
+.logo {
+    
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav-bar li {
+    display: inline-block;
+    padding: 1rem 0 0.5rem 0;
+}
+
+
+.nav-bar a {
+    color: black;
+    text-decoration: none;
+}
+
+.contact-btn a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Hero Section */
+
+.hero-section {
+    background-color: rgba(245, 245, 245, 0.8);
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h3 {
+    color: darkred;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.03rem;
+    padding-bottom: 1rem;
+}
+
+.hero-section__content {
+    width: 70%;
+}
+
+.hero-section__content h1 {
+    /* color: hsla(0, 0%, 10%, 0.9); */
+    color: darkred;
+    font-size: 5rem;
+}
+
+.hero-section__content .intro-small {
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.hero-section__content h2 {
+    /* color: hsla(0, 0%, 25%, 0.8); */
+    color: hsla(0, 90%, 27%, 0.8);
+    font-size: 1.8rem;
+}
+
+.hero-section p {
+    /* color: darkred; */
+    max-width: 800px;
+    font-size: 1.2rem;
+    padding-top: 2.8rem;
+    letter-spacing: 0.01rem;
+    word-spacing: 0.05rem;
+    line-height: 1.8;
+}
+
+.hero-section p .description-bold {
+    color: hsla(0, 0%, 10%, 0.9);
+    /* color: darkred; */
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.button-container {
+    margin-top: 3rem;
+}
+
+.button-container button {
+    background-color: transparent;
+    color: darkred;
+    font-size: 1.2rem;
+    width: 20%;
+    max-width: 200px;
+    padding: 1rem 0;
+    border: 2px solid darkred;
+    border-radius: 5px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}
+
+/* ANIMATION FOR THE HAND WAVE BEGINS */
+
+.hero-section__content .hand-wave {
+    width: 39px;
+    position: relative;
+    top: 0.3rem;
+    animation-name: hand-wave;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes hand-wave {
+    0% {
+        transform: rotate(-3deg);
+    }
+
+    100% {
+        transform: rotate(7deg);
+    }
+
+}
+
+/* ANIMATION FOR THE HAND WAVE ENDS */
+
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12rem 0;
+
+}
+
+.about-me__summary {
+    width: 45%;
+    padding-top: 1.2rem;
+}
+
+.about-me__image {
+    width: 40%;
+    text-align: center;
+}
+
+.about-me__image img {
+    max-height: auto;
+}
+
+.about-me__summary h4 {
+    color: darkred;
+    font-weight: 600;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.about-me__summary span, .projects span {
+    padding-top: 1.6rem;
+    border-top: 5px solid darkred;
+}
+
+.about-me__summary p {
+    font-size: 1.2rem;
+    word-spacing: 0.05rem;
+    margin: 1rem 0;
+    letter-spacing: 0.03rem;
+    line-height: 1.8;
+}
+
+.about-me__summary p:last-child {
+    margin-top: 2rem;
+}
+
+/* Projects Section */
+
+.projects {
+    background-color: rgb(250, 249, 249);
+    padding: 7rem 0 10rem 0;
+}
+
+.projects h4 {
+    color: darkred;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    padding-bottom: 7rem;
+}
+
+.projects__list-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.projects__list-container li {
+    background-color: white;
+    margin: 0 1rem 2rem 0.15rem;
+    max-width: 371px;
+    max-height: 480px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.list-content {
+    width: 78%;
+    padding: 3rem 0;
+    margin-inline: auto;
+}
+
+.icon img {
+    width: 30px;
+}
+
+.list-content__header {
+    /* color: grey; */
+    color: hsla(0, 90%, 27%, 0.8);
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 2rem 0;
+}
+
+.list-content__summary {
+    font-size: 1.15rem;
+    letter-spacing: 0.03rem;
+    word-spacing: 0.05rem;
+    line-height: 1.5;
+}
+
+.projects .technologies {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1.5rem 0;
+    list-style: none;
+}
+
+.projects .technologies li {
+    color: darkred;
+    box-shadow: none;
+    margin: 0.15rem;
+}
+
+.project-links {
+    /* margin: 1.5rem 0; */
+    display: flex;
+    align-items: center;
+}
+
+
+.project-links img {
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+}
+
+.project-links img.github {
+    width: 30px;
+    margin-right: 1.5rem;
+}
+
+.project-links img.window {
+    width: 40px;
+}
+
+.btn-container {
+    text-align: center;
+    padding: 8rem 0;
+}
+
+.contact-btn {
+    background-color: grey;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 12%;
+    padding: 1rem 0;
+    border: 1px solid grey;
+    border-radius: 30px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.contact-btn a {
+    color: white;
+    letter-spacing: 0.05rem;
+}
+
+footer {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .nav-bar {
+        padding: 1rem 0;
+        width: 90%;
+    }
+
+    .nav-bar ul {
+        display: none;
+    }
+    
+    .hero-section {
+        padding: 3rem 0 5rem 0;
+        height: auto;
+    }
+    
+    .hero-section__content {
+        width: 93%;
+    }
+    
+    .hero-section h3 {
+        font-size: 1.4rem;
+    }
+    
+    .hero-section__content h1 {
+        font-size: 2.27rem;
+    }
+    
+    .hero-section__content .intro-small {
+        font-size: 1rem;
+    }
+    
+    .hero-section__content h2 {
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
+        line-height: 1.5;
+    }
+    
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+    
+    .hero-section p .description-bold {
+        font-size: 1rem;
+    }
+    
+    .button-container button {
+        width: 60%;
+        font-size: 1rem;
+        max-width: 150px;
+        padding: 0.9rem 0;
+    }
+    
+    .hero-section__content .hand-wave {
+        width: 29px;
+    }
+
+    /* AboUT mE Section */
+
+    .container {
+        width: 90%;
+    }
+
+    .about-me {
+        padding: 7rem 0 4rem 0;
+        display: block;
+    }
+
+    .about-me__summary {
+        width: 100%;
+    }
+
+    .about-me__summary h4 {
+        font-size: 1.4rem;
+    }   
+
+    .about-me__summary span, .projects span{
+        border-width: 3px;
+        padding-top: 1.3rem;
+    }
+
+    .about-me__summary p {
+        font-size: 0.9rem;
+        margin: 0.5rem 0;
+    }
+
+    .about-me__image {
+        width: 80%;
+        max-width: 350px;
+        margin: 3rem auto;
+    }
+
+    /* Projects Section */
+
+    .projects {
+        padding: 5rem 0;
+    }
+
+    .projects h4 {
+        font-size: 1.4rem;
+    }
+
+    .projects__list-container {
+        justify-content: center;
+    }
+
+    .icon img {
+        width: 25px;
+    }
+
+    .list-content__header {
+        font-size: 1.1rem;
+        padding: 1.2rem 0;
+    }
+
+    .list-content__summary {
+        font-size: 0.9rem;
+    }
+
+    .projects .technologies li {
+        font-size: 1rem;
+    }
+
+    /* Contact Us section */
+    .btn-container {
+        padding: 5rem 0;
+    }
+
+    .contact-btn {
+        background-color: transparent;
+        width: 60%;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 0.9rem 0;
+        font-size: 1rem;
+        border: 1px solid darkred;
+    }
+
+    .contact-btn a {
+        color: darkred;
+    }
+
+}
+
+
+
+
+
+/*
+
+
+
+
+
+* /
